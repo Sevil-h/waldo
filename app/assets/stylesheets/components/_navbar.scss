@@ -10,3 +10,90 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  font-size: 1rem;
+
+  &__items {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  &__items-bottom {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 1rem;
+  }
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__brand {
+    font-size: 2rem;
+    color: $color-primary;
+    letter-spacing: 0.2rem;
+  }
+
+  &__item-bottom {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__rg {
+    margin-left: 1.2rem;
+    font-size: 0.8rem;
+  }
+
+   &__link,
+   &:link,
+   &:visited {
+    display: inline-block;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    color: $color-primary;
+    transition: all .3s;
+
+      &:hover {
+        text-decoration: none;
+        color: $color-orange;
+      }
+   }
+
+   &__link-started {
+    color: $color-orange;
+
+    &:hover {
+      color: $color-primary;
+    }
+   }
+
+   &__link-rg {
+    color: $color-primary-light-1;
+    border-bottom: 1px solid $color-orange;
+    margin-bottom: -2px;
+    transition: all .3s;
+
+    &:hover {
+      color: $color-orange;
+      border-bottom: 1px solid $color-primary;
+    }
+   }
+
+}

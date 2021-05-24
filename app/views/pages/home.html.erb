@@ -27,4 +27,63 @@
       <p class="photo-slide__text">Your WALDO purchase will fund life-changing sight correcting procedures for those living with vision-related disabilities.</p>
     </div>
   </section>
+
+  <section class="cards">
+
+    <div class="card">
+      <h1 class="card__header">Daily Contact Lenses</h1>
+      <p class="card__parag">By enrolling onto one of our contract lens subscription plans, with each year that you're with us, you'll be providing a much-needed cataract surgery to an individual who would otherwise be at risk of blindness.</p>
+      <div class="card__dropbox">
+        <p>What are cataracts?</p>
+        <span><i class="fas fa-chevron-down"></i></span>
+      </div>
+      <div class="card__icons">
+        <span class="card__icons--item">
+          <%= render 'daily-contact-lenses-1' %>
+        </span>
+        <span class="card__icons--item">
+          <i class="fas fa-caret-right"></i>
+        </span>
+        <span class="card__icons--item">
+          <%= render 'daily-contact-lenses-2' %>
+        </span>
+      </div>
+      <a href="#" class="btn btn--outline">Get Started</a>
+    </div>
+
+    <div class="card">
+      <h1 class="card__header">Blue Light Glasses</h1>
+      <p class="card__parag">We'll fund the cost of a pair of prescription glasses to someone in need for every pair for glasses sold.</p>
+      <div class="card__icons">
+        <span class="card__icons--item">
+          <%= render 'blue-light-glasses' %>
+        </span>
+        <span class="card__icons--item">
+          <i class="fas fa-caret-right"></i>
+        </span>
+        <span class="card__icons--item">
+          <%= render 'prescription-glasses' %>
+        </span>
+      </div>
+      <a href="#" class="btn btn--outline">Browse Frames</a>
+    </div>
+
+    <div class="card">
+      <h1 class="card__header">Hydration Drops</h1>
+      <p class="card__parag">We'll deliver a sight-saving trachoma tretment to somebody in need, with every purchase of our Hydration Drops.</p>
+      <div class="card__dropbox">What is trachoma?</div>
+      <div class="card__icons">
+        <span class="card__icons--item">
+          <%= render 'hydration-drop' %>
+        </span>
+        <span class="card__icons--item">
+          <i class="fas fa-caret-right"></i>
+        </span>
+        <span class="card__icons--item">
+          <%= render 'trachoma' %>
+        </span>
+      </div>
+      <a href="#" class="btn btn--outline">Get Started</a>
+    </div>
+  </section>
 </div>

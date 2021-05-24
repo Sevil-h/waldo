@@ -17,9 +17,7 @@
   }
 
   &__item {
-      &:not(:last-child) {
-        margin-bottom: 0.8rem;
-      }
+    margin-bottom: 1rem;
   }
 
   &__photo{

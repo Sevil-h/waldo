@@ -1,0 +1,19 @@
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem 3.5rem;
+  text-transform: uppercase;
+  font-family: $headers-font;
+  font-weight: 300;
+  margin: 2rem;
+}
+
+.btn-outline,
+.btn-outline:link,
+.btn-outline:visited {
+  border: 2px solid $white;
+  color: $white;
+
+}

@@ -1,1 +1,15 @@
 <%= render 'navigation' %>
+<div class="container">
+  <div class="header">
+    <img src="<%= image_path('main.png') %>" alt="Main Phoyo" class="header__item header__photo">
+    <div class="header__item header__info">
+      <h1 class="header__item header__head">Buy One, Give Vision</h1>
+      <p class="header__item header__text">In givingthe gift of sight, you're not only helping someone to see again, you're helping to <span class="header__text--bold"> build stronger communities.</span></p>
+      <div class="header__item header__logo">
+        <%= render 'waldo-logo-white' %>
+        <span class="header__x"> X </span>
+        <%= render 'sightsavers' %>
+      </div>
+    </div>
+  </div>
+</div>

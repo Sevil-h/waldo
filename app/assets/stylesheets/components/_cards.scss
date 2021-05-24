@@ -18,6 +18,18 @@
   background-color: $color-primary-light-1;
   padding: 1rem;
 
+  &__info-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+
+  &__info-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+
   &__header{
     font-family: $body-font;
     font-weight: 400;
@@ -37,10 +49,7 @@
   }
 
   &__dropbox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 2rem 0.2rem;
+    margin: 3rem 0.2rem;
 
     font-size: 1rem;
     font-weight: 200;

@@ -51,10 +51,11 @@
   }
 
   &__x {
+    font-family: $headers-font;
     color: $red;
     font-size: 2rem;
     margin-right: 1rem;
     margin-left: 1rem;
-    font-weight: 300;
+    font-weight: 500;
   }
 }

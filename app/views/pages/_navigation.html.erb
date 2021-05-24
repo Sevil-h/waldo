@@ -21,8 +21,30 @@
 </div>
 
 <nav class="nav">
+  <div class="burger-navigation">
+    <input type="checkbox" class="burger-navigation__checkbox" id="navi-toggle">
+
+    <label for="navi-toggle" class="burger-navigation__button">
+      <span class="burger-navigation__icon">&nbsp;</span>
+    </label>
+
+    <div class="burger-navigation__background">&nbsp;</div>
+
+    <div class="burger-navigation__nav">
+      <ul class="burger-navigation__list">
+        <li class="burger-navigation__item"><a href="#" class="burger-navigation__link">LOGIN</a></li>
+        <li class="burger-navigation__item"><a href="#" class="burger-navigation__link">ABOUT US</a></li>
+        <li class="burger-navigation__item"><a href="#" class="burger-navigation__link">GET STARTED</a></li>
+        <li class="burger-navigation__item"><a href="#" class="burger-navigation__link">ORIGINAL LENSES</a></li>
+        <li class="burger-navigation__item"><a href="#" class="burger-navigation__link">VITAMIN LENSES</a></li>
+        <li class="burger-navigation__item"><a href="#" class="burger-navigation__link">BLUE LIGHT GLASSES</a></li>
+        <li class="burger-navigation__item"><a href="#" class="burger-navigation__link">eGIFT CARD</a></li>
+      </ul>
+    </div>
+  </div>
   <ul class="nav__items">
     <li class="nav__item"><a href="#" class="nav__link"><span>About us</span></a></li>
+
     <li class="nav__item">
       <span class="nav__brand">
         <%= render 'waldo-logo' %>

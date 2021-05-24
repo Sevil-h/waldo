@@ -8,6 +8,8 @@
   font-family: $headers-font;
   font-weight: 300;
   margin: 2rem;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .btn-outline,
@@ -15,5 +17,12 @@
 .btn-outline:visited {
   border: 2px solid $white;
   color: $white;
+  transition: all .4s;
+
+  &:hover {
+    color: $yellow;
+    border: 2px solid $yellow;
+    box-shadow: 0 2rem 5rem (0,0,0,.4);
+  }
 
 }

@@ -123,7 +123,7 @@
     <section class="communities">
 
       <div class="communities__container">
-        <h1 class="communities__header communities__header--x">Building stronger communities</h1>
+        <h1 class="header--underline">Building stronger communities</h1>
         <div class="communities__card">
           <div class="communities__box communities__box--1">
             <div class="communities__icon-box">
@@ -131,8 +131,8 @@
                 <span class="communities__icon"><%= render 'community' %></span>
               </div>
             </div>
-            <h3 class="communities__header">Individual</h3>
-            <p class="communities__text">Your WALDO purchase will fund sight-saving products and treatments, which will directly help an individual to complete daily tasks and participate equally in their community, ensuring that no one is left behind.</p>
+            <h3 class="main-header">Individual</h3>
+            <p class="main-text">Your WALDO purchase will fund sight-saving products and treatments, which will directly help an individual to complete daily tasks and participate equally in their community, ensuring that no one is left behind.</p>
           </div>
 
           <div class="communities__box communities__box--2">
@@ -147,8 +147,8 @@
               <span class="communities__circle">&nbsp;</span>
             </div>
 
-            <h3 class="communities__header">Immediate community</h3>
-            <p class="communities__text">By helping somebody in need, you'll also be helping the immediate community surrounding this individual to thrive, because in many casesvision is critical to daily life.</p>
+            <h3 class="main-header">Immediate community</h3>
+            <p class="main-text">By helping somebody in need, you'll also be helping the immediate community surrounding this individual to thrive, because in many casesvision is critical to daily life.</p>
             <div class="communities__icon-box">
               <div class="communities__icons">
                 <span class="communities__icon"><%= render 'community' %></span>
@@ -172,8 +172,8 @@
               <span class="communities__circle">&nbsp;</span>
             </div>
 
-            <h3 class="communities__header">Wider community</h3>
-            <p class="communities__text">By helping small groups of individuals, the localities that these individuals are a part of will become more supported and more efficient.</p>
+            <h3 class="main-header">Wider community</h3>
+            <p class="main-text">By helping small groups of individuals, the localities that these individuals are a part of will become more supported and more efficient.</p>
             <div class="communities__icon-box">
               <div class="communities__icons">
                 <span class="communities__icon"><%= render 'community' %></span>
@@ -192,6 +192,12 @@
         </div>
       </div>
 
+    </section>
+
+    <section class="map__container">
+      <h1 class="header--underline">Across the globe</h1>
+      <p class="main-text">Our partnership with Sightsavers focuses on low and middle income countries in <strong>Africa</strong> and <strong>Asia.</strong></p>
+      <img src="<%= image_path('map.png') %>" alt="Map" class="map__container--image">
     </section>
 
   </div>

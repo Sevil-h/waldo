@@ -82,7 +82,14 @@
   &__tree {
 
     &--line {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px dotted $color-orange;
 
+      &--sm{
+
+      }
     }
   }
 

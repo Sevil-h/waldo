@@ -1,0 +1,99 @@
+.communities {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  color: $color-primary;
+  font-family: $body-font;
+
+  &__container {
+    background-color: $color-grey-light-2;
+    padding: 2rem;
+    position: relative;
+    top: -27rem;
+    margin: 1rem;
+  }
+
+  &__card {
+    background-color: $color-grey-light;
+    padding: 2rem;
+    margin: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__header{
+    font-weight: 400;
+    font-family: inherit;
+    font-size: 2rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    &--x {
+      text-decoration: underline $color-orange;
+    }
+  }
+
+  &__text {
+    font-weight: 200;
+    font-family: inherit;
+    font-size: 1rem;
+
+    margin-bottom: 1rem;
+  }
+
+  &__box {
+
+
+    &--1{
+      width: 45%;
+    }
+
+    &--2{
+      width: 60%;
+    }
+
+    &--3{
+      width: 80%;
+    }
+  }
+
+  &__icon-box {
+
+  }
+
+  &__icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__icon {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__tree {
+
+    &--line {
+
+    }
+  }
+
+  &__circle {
+    content: '';
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50%, $yellow 25% ,rgba($yellow,.8) 24%, rgba($yellow, .3) 50%)
+
+  }
+
+}

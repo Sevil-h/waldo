@@ -1,9 +1,11 @@
-.cards {
+.cards-section {
   background-color: $color-primary;
   color: $white;
   margin-top: -5rem;
   padding: 5rem 3.5rem 55rem 3.5rem;
+}
 
+.cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1.5rem;

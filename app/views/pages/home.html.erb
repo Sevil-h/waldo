@@ -200,4 +200,35 @@
       <img src="<%= image_path('map.png') %>" alt="Map" class="map__container--image">
     </section>
 
+    <section class="carousel">
+
+      <div class="header__item header__logo">
+        <%= render 'waldo-logo-white' %>
+          <span class="header__x"> X </span>
+        <%= render 'sightsavers' %>
+      </div>
+
+      <div class="slider">
+
+        <div class="slider__arrow slider__arrow--left" id="left"><i class="fas fa-chevron-left"></i></div>
+
+        <div class="slider__container active">
+          <img src="<%= image_path('image-10.png') %>" alt="Slider Photo" class="slider__image">
+          <p class="text--white">Meet 5-years-old Langford Mwale, of Petauke, Eastern Zambia, whose cataract surgery, supported by Sightsavers, restored his vision and allowed him to enter school for the first time.</p>
+        </div>
+
+        <div class="slider__container">
+          <img src="<%= image_path('image-11.png') %>" alt="Slider Photo" class="slider__image">
+          <p class="text--white">Meet Kalpana Das, pictured getting her eyes checked at a vision center on Sagar Isaland in Sunderbans. Sightsavers has provided over 1 billion treatments to prevent eye diseases, like River Blindness and Trachoma, which cause severe discomfort.</p>
+        </div>
+
+        <div class="slider__container">
+          <img src="<%= image_path('image-12.png') %>" alt="Slider Photo" class="slider__image">
+          <p class="text--white">Meet Ariane MArie Sangare who is pictured wearing her new glasses at school.</p>
+        </div>
+        <div class="slider__arrow arrow--right" id="right"><i class="fas fa-chevron-right"></i></div>
+
+      </div>
+    </section>
+
   </div>

@@ -80,15 +80,45 @@
   }
 
   &__tree {
+    position: relative;
+    padding: 2rem;
 
     &--line {
       content: '';
       display: inline-block;
       width: 100%;
       border-bottom: 1px dotted $color-orange;
+      position: relative;
 
       &--sm{
+        content: '';
+        display: inline-block;
+        height: 20%;
+        border-left: 1px dotted $color-orange;
 
+        &-1 {
+          position: absolute;
+          top: 52px;
+          left: 30px;
+        }
+
+        &-2{
+          position: absolute;
+          top: 52px;
+          right: 30px;
+        }
+      }
+
+
+      &--lg {
+        content: '';
+        display: inline-block;
+        height: 30%;
+        border-left: 1px dotted $color-orange;
+
+        position: absolute;
+        top: 10%;
+        left: 50%;
       }
     }
   }
@@ -99,7 +129,10 @@
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
-    background: radial-gradient(circle at 50%, $yellow 25% ,rgba($yellow,.8) 24%, rgba($yellow, .3) 50%)
+    background: radial-gradient(circle at 50%, $yellow 25% ,rgba($yellow,.8) 24%, rgba($yellow, .3) 50%);
+
+    position: relative;
+    top: -1rem;
 
   }
 

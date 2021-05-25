@@ -1,8 +1,6 @@
 .communities {
   margin-right: 1.5rem;
   margin-left: 1.5rem;
-  color: $color-primary;
-  font-family: $body-font;
 
   position: relative;
   &__container {
@@ -23,28 +21,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-
-  &__header{
-    font-weight: 400;
-    font-family: inherit;
-    font-size: 2rem;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 1rem;
-
-    &--x {
-      text-decoration: underline $color-orange;
-    }
-  }
-
-  &__text {
-    font-weight: 200;
-    font-family: inherit;
-    font-size: 1rem;
-
-    margin-bottom: 1rem;
   }
 
   &__box {

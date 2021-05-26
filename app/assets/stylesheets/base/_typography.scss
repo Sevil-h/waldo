@@ -35,20 +35,20 @@
 
 .text--white {
   font-weight: 300;
-  font-family: inherit;
+  font-family: $body-font;
   font-size: 1rem;
 
   color: $white;
-  font-family: $body-font;
+  text-align: center;
 }
 
 .text--white-sm {
   font-weight: 300;
-  font-family: inherit;
+  font-family: $body-font;
   font-size: 0.8rem;
 
   color: $white;
-  font-family: $body-font;
+  text-align: center;
 }
 
 .text--blue {
@@ -56,4 +56,5 @@
   font-size: 1rem;
   color: $color-primary;
   font-family: $body-font;
+  text-align: center;
 }

@@ -1,6 +1,4 @@
 .photo-slide {
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
 
   &__container {
     display: flex;
@@ -14,22 +12,6 @@
     top: -3rem;
 
      overflow: hidden;
-
-  }
-
-  &__text {
-    text-align: center;
-    font-family: inherit;
-    color: $color-primary;
-    font-weight: 300;
-
-    &:not(:last-child) {
-      margin-bottom: 1.5rem;
-    }
-
-    &--bold {
-      font-weight: 400;
-    }
 
   }
 
@@ -64,17 +46,5 @@
     animation: scroller 50s linear infinite;
   }
 
-  &__text {
-
-  }
-
 }
 
-@keyframes scroller {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-1600px);
-  }
-}

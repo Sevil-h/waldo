@@ -1,19 +1,14 @@
 .communities {
-  margin-right: 1.5rem;
-  margin-left: 1.5rem;
-
   position: relative;
   &__container {
     background-color: $color-grey-light-2;
-    padding: 2rem;
 
     position: absolute;
-    top: -52rem;
+    top: -50rem;
   }
 
   &__card {
     background-color: $color-grey-light;
-    padding: 2rem;
     margin: 1rem;
 
     display: flex;
@@ -24,7 +19,6 @@
   }
 
   &__box {
-
 
     &--1{
       width: 45%;
@@ -37,10 +31,6 @@
     &--3{
       width: 80%;
     }
-  }
-
-  &__icon-box {
-
   }
 
   &__icons{
@@ -58,7 +48,6 @@
 
   &__tree {
     position: relative;
-    padding: 2rem;
 
     &--line {
       content: '';

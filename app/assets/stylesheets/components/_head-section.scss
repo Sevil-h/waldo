@@ -1,0 +1,23 @@
+.header {
+  &__info {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-conten: center;
+
+  }
+
+  &__item {
+    margin-bottom: 1rem;
+  }
+
+  &__photo{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.2);
+    border-radius: 2px;
+  }
+}

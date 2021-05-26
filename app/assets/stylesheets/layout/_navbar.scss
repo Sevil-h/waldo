@@ -5,9 +5,17 @@
   text-transform: uppercase;
   margin: 0 auto;
   background-color: #fff;
+  font-family: $body-font;
   font-size: 1rem;
   position: relative;
   padding: 2rem 8rem;
+
+  &__logo {
+    position: absolute;
+    top: 2rem;
+    left: 45%;
+    z-index: 100;
+  }
 
 
   &__items {
@@ -28,12 +36,6 @@
 
   &__item {
     display: inline-block;
-  }
-
-  &__brand {
-    font-size: 2rem;
-    color: $color-primary;
-    letter-spacing: 0.2rem;
   }
 
   &__item-bottom {
@@ -68,8 +70,10 @@
 
    &__link-started {
     color: $color-orange;
+    transition: all .3s;
+    margin-right: 0.5rem;
 
-    &:hover
+    &:hover,
     &:active{
       color: $color-primary;
     }
@@ -235,3 +239,4 @@
     }
 
 }
+

@@ -1,6 +1,7 @@
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  // grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1.5rem;
 }
 
@@ -11,11 +12,13 @@
   align-items: center;
   text-align: center;
   background-color: $color-primary-light-1;
-  padding: 1rem;
+  padding: 2rem;
+
+  display: none;
 
 
   &--active {
-    // display: block;
+    display: block;
   }
 
   &__info-top {

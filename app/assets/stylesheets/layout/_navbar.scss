@@ -1,23 +1,18 @@
 .nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   text-transform: uppercase;
   margin: 0 auto;
   background-color: #fff;
   font-family: $body-font;
   font-size: 1rem;
   position: relative;
-  padding: 2rem 8rem;
 
   &__deskop {
-    // display: none;
-  }
-
-  &__mobile {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    padding: 2rem 8rem;
+
+    display: none;
   }
 
   &__logo {
@@ -106,20 +101,30 @@
 
 ////////////////////////////////////////////
 // Burger Navigation
+.burger-navigation-container {
+  // display: flex;
+  // flex-direction: row;
+  padding: 1rem;
+}
 
 .burger-navigation {
-  display: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 
+  // display:none;
   &__checkbox{
     display: none;
   }
 
   &__button {
-    position:fixed;
-    height: 4rem;
-    width: 4rem;
-    top: 2rem;
-    left: 2rem;
+    position: relative;
+    height: 3rem;
+    width: 3rem;
+    top: 0;
+    left: 1rem;
     z-index: 2000;
     text-align: center;
     cursor: pointer;
@@ -129,12 +134,11 @@
   }
 
   &__background {
-    height: 4rem;
-    width: 4rem;
-    position: fixed;
-    background-color: transparent;
-    top: 2rem;
-    left: 2rem;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 0;
+    left: 1rem;
     z-index: 1000;
     transition: transform .7s cubic-bezier(0,.65,1,.55);
     background-color: $white;

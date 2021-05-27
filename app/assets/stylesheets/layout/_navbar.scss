@@ -5,6 +5,7 @@
   font-family: $body-font;
   font-size: 1rem;
   position: relative;
+  width: 100vw;
 
   &__deskop {
     display: flex;
@@ -18,7 +19,7 @@
   &__logo {
     position: absolute;
     top: 2rem;
-    left: 45%;
+    left: 30%;
     z-index: 100;
   }
 

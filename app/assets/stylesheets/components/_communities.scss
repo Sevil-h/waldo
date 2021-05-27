@@ -2,6 +2,8 @@
   margin-bottom: -57rem;
   &__container {
     background-color: $color-grey-light-2;
+    // padding: 2rem;
+    padding: 0.5rem;
 
     position: relative;
     top: -50rem;
@@ -10,6 +12,8 @@
   &__card {
     background-color: $color-grey-light;
     margin: 1rem;
+    padding: 0.5rem;
+    // padding: 2rem;
 
     display: flex;
     flex-direction: column;

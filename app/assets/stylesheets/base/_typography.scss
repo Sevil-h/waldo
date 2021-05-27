@@ -1,0 +1,60 @@
+.header--blue {
+  font-weight: 400;
+  font-family: inherit;
+  font-size: 2rem;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: $color-primary;
+  font-family: $body-font;
+}
+
+.header--white {
+  font-weight: 400;
+  font-family: inherit;
+  font-size: 2rem;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: $white;
+  font-family: $body-font;
+}
+
+.header--underline {
+  font-weight: 400;
+  font-family: inherit;
+  font-size: 2rem;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-decoration: underline $color-orange;
+  color: $color-primary;
+  font-family: $body-font;
+
+}
+
+.text--white {
+  font-weight: 300;
+  font-family: $body-font;
+  font-size: 1rem;
+
+  color: $white;
+  text-align: center;
+}
+
+.text--white-sm {
+  font-weight: 300;
+  font-family: $body-font;
+  font-size: 0.8rem;
+
+  color: $white;
+  text-align: center;
+}
+
+.text--blue {
+  font-weight: 300;
+  font-size: 1rem;
+  color: $color-primary;
+  font-family: $body-font;
+  text-align: center;
+}

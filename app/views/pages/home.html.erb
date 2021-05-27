@@ -1,53 +1,59 @@
 <%= render 'navigation' %>
 <div class="container">
 
- <section class="header">
-  <img src="<%= image_path('main.png') %>" alt="Main Phoyo" class="header__item header__photo">
-  <div class="header__item header__info">
-    <h1 class="header__item header__head">Buy One, Give Vision</h1>
-    <p class="header__item header__text">In givingthe gift of sight, you're not only helping someone to see again, you're helping to <span class="header__text--bold"> build stronger communities.</span></p>
-    <div class="header__item header__logo">
-      <%= render 'waldo-logo-white' %>
-      <span class="header__x"> X </span>
-      <%= render 'sightsavers' %>
+  <section class="head-section">
+   <div class="header">
+    <div class="header__photo">
+      <img src="<%= image_path('main.png') %>" alt="Main Phoyo" class="header__item header__photo--main">
+    </div>
+    <div class="header__item header__info">
+      <h1 class="header__item header--white">Buy One, Give Vision</h1>
+      <p class="header__item text--white">In givingthe gift of sight, you're not only helping someone to see again, you're helping to <strong> build stronger communities.</strong></p>
+      <div class="header__item logo">
+        <%= render 'waldo-logo-white' %>
+        <span class="logo__x"> X </span>
+        <%= render 'sightsavers' %>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="photo-slide">
- <div class="photo-slide__container">
-  <p class="photo-slide__text">We've partnered with <span class="photo-slide__text--bold">Sightsavers</span> to further pursue our mission of ending avoidable blindness and championing positive vision.</p>
-  <div class="photo-slide__images photo-slide__animation">
-    <img src="<%= image_path('image-2.png') %>" alt="Photo" class="photo-slide__image image-2">
-    <img src="<%= image_path('image-3.png') %>" alt="Photo" class="photo-slide__image image-3">
-    <img src="<%= image_path('image-4.png') %>" alt="Photo" class="photo-slide__image image-4">
-    <img src="<%= image_path('image-5.png') %>" alt="Photo" class="photo-slide__image image-5">
+<section class="photo-slide-section">
+  <div class="photo-slide">
+   <div class="photo-slide__container">
+    <p class="text--blue">We've partnered with <strong>Sightsavers</strong> to further pursue our mission of ending avoidable blindness and championing positive vision.</p>
+    <div class="photo-slide__images photo-slide__animation">
+      <img src="<%= image_path('image-2.png') %>" alt="Photo" class="photo-slide__image">
+      <img src="<%= image_path('image-3.png') %>" alt="Photo" class="photo-slide__image">
+      <img src="<%= image_path('image-4.png') %>" alt="Photo" class="photo-slide__image">
+      <img src="<%= image_path('image-5.png') %>" alt="Photo" class="photo-slide__image">
 
-    <img src="<%= image_path('image-2.png') %>" alt="Photo" class="photo-slide__image image-2">
-    <img src="<%= image_path('image-3.png') %>" alt="Photo" class="photo-slide__image image-3">
-    <img src="<%= image_path('image-4.png') %>" alt="Photo" class="photo-slide__image image-4">
-    <img src="<%= image_path('image-5.png') %>" alt="Photo" class="photo-slide__image image-5">
+      <img src="<%= image_path('image-2.png') %>" alt="Photo" class="photo-slide__image">
+      <img src="<%= image_path('image-3.png') %>" alt="Photo" class="photo-slide__image">
+      <img src="<%= image_path('image-4.png') %>" alt="Photo" class="photo-slide__image">
+      <img src="<%= image_path('image-5.png') %>" alt="Photo" class="photo-slide__image">
 
-    <img src="<%= image_path('image-2.png') %>" alt="Photo" class="photo-slide__image image-2">
-    <img src="<%= image_path('image-3.png') %>" alt="Photo" class="photo-slide__image image-3">
-    <img src="<%= image_path('image-4.png') %>" alt="Photo" class="photo-slide__image image-4">
-    <img src="<%= image_path('image-5.png') %>" alt="Photo" class="photo-slide__image image-5">
+      <img src="<%= image_path('image-2.png') %>" alt="Photo" class="photo-slide__image">
+      <img src="<%= image_path('image-3.png') %>" alt="Photo" class="photo-slide__image">
+      <img src="<%= image_path('image-4.png') %>" alt="Photo" class="photo-slide__image">
+      <img src="<%= image_path('image-5.png') %>" alt="Photo" class="photo-slide__image">
+    </div>
+
+    <p class="text--blue">Your WALDO purchase will fund life-changing sight correcting procedures for those living with vision-related disabilities.</p>
   </div>
-
-  <p class="photo-slide__text">Your WALDO purchase will fund life-changing sight correcting procedures for those living with vision-related disabilities.</p>
 </div>
 </section>
 
 <section class="cards-section">
   <div class="cards">
 
-    <div class="card">
+    <div class="card card--active">
       <div class="card__info-top">
-        <h1 class="card__header">Daily Contact Lenses</h1>
-        <p class="card__parag">By enrolling onto one of our contract lens subscription plans, with each year that you're with us, you'll be providing a much-needed cataract surgery to an individual who would otherwise be at risk of blindness.</p>
+        <h1 class="header--white utility-margin-bt">Daily Contact Lenses</h1>
+        <p class="text--white">By enrolling onto one of our contract lens subscription plans, with each year that you're with us, you'll be providing a much-needed cataract surgery to an individual who would otherwise be at risk of blindness.</p>
         <div class="dropdown">
           <span class="dropdown__border"></span>
-          <div class="dropdown--p">What are cataracts?
+          <div class="dropdown--p text--white">What are cataracts?
             <input type="checkbox" class="dropdown__checkbox" id="dropdown-toggle">
 
             <label for="dropdown-toggle" class="dropdown__button">
@@ -66,7 +72,7 @@
         <div class="card__icons">
           <span class="card__icons--item">
             <%= render 'daily-contact-lenses-1' %>
-            <p class="card__parag-sm">Contact lens sunscription plan</p>
+            <p class="text--white-sm utility-margin-top-sm">Contact lens sunscription plan</p>
           </span>
           <span class="card__icons--border">
             <span class="border"></span>
@@ -74,7 +80,7 @@
           </span>
           <span class="card__icons--item">
             <%= render 'daily-contact-lenses-2' %>
-            <p class="card__parag-sm">Cataract surgery</p>
+            <p class="text--white-sm utility-margin-top-sm">Cataract surgery</p>
           </span>
         </div>
         <a href="#" class="btn btn-outline">Get Started</a>
@@ -85,15 +91,15 @@
     <div class="card">
 
       <div class="card__info-top">
-        <h1 class="card__header">Blue Light Glasses</h1>
-        <p class="card__parag">We'll fund the cost of a pair of prescription glasses to someone in need for every pair for glasses sold.</p>
+        <h1 class="header--white utility-margin-bt">Blue Light Glasses</h1>
+        <p class="text--white">We'll fund the cost of a pair of prescription glasses to someone in need for every pair for glasses sold.</p>
       </div>
 
       <div class="card__info-bottom">
         <div class="card__icons">
           <span class="card__icons--item">
             <%= render 'blue-light-glasses' %>
-            <p class="card__parag-sm">Each Blue Light Glasses purchase</p>
+            <p class="text--white-sm utility-margin-top-sm">Each Blue Light Glasses purchase</p>
           </span>
           <span class="card__icons--border">
             <span class="border"></span>
@@ -101,7 +107,7 @@
           </span>
           <span class="card__icons--item">
             <%= render 'prescription-glasses' %>
-            <p class="card__parag-sm">Prescription Glasses</p>
+            <p class="text--white-sm utility-margin-top-sm">Prescription Glasses</p>
           </span>
         </div>
         <a href="#" class="btn btn-outline">Browse Frames</a>
@@ -112,12 +118,12 @@
     <div class="card">
 
       <div class="card__info-top">
-        <h1 class="card__header">Hydration Drops</h1>
-        <p class="card__parag">We'll deliver a sight-saving trachoma tretment to somebody in need, with every purchase of our Hydration Drops.</p>
+        <h1 class="header--white utility-margin-bt">Hydration Drops</h1>
+        <p class="text--white">We'll deliver a sight-saving trachoma tretment to somebody in need, with every purchase of our Hydration Drops.</p>
 
         <div class="dropdown">
           <span class="dropdown__border"></span>
-          <div class="dropdown--p">What is trachoma?
+          <div class="dropdown--p text--white">What is trachoma?
             <input type="checkbox" class="dropdown__checkbox" id="dropdown-toggle-right">
 
             <label for="dropdown-toggle-right" class="dropdown__button">
@@ -137,7 +143,7 @@
         <div class="card__icons">
           <span class="card__icons--item">
             <%= render 'hydration-drop' %>
-            <p class="card__parag-sm">Each Hydration Drop purchase</p>
+            <p class="text--white-sm utility-margin-top-sm">Each Hydration Drop purchase</p>
           </span>
           <span class="card__icons--border">
             <span class="border"></span>
@@ -145,7 +151,7 @@
           </span>
           <span class="card__icons--item">
             <%= render 'trachoma' %>
-            <p class="card__parag-sm">Trachoma treatment</p>
+            <p class="text--white-sm utility-margin-top-sm">Trachoma treatment</p>
           </span>
         </div>
         <a href="#" class="btn btn-outline">Get Started</a>
@@ -161,91 +167,91 @@
   </div>
 </section>
 
-<section class="communities">
-
-  <div class="communities__container">
-    <h1 class="header--underline">Building stronger communities</h1>
-    <div class="communities__card">
-      <div class="communities__box communities__box--1">
-        <div class="communities__icon-box">
-          <div class="communities__icon">
-            <span class="communities__icon"><%= render 'community' %></span>
+<section class="communities-section">
+  <div class="communities">
+    <div class="communities__container">
+      <h1 class="header--underline">Building stronger communities</h1>
+      <div class="communities__card">
+        <div class="communities__box communities__box--1">
+          <div class="communities__icon-box">
+            <div class="communities__icons">
+              <span class="communities__icon"><%= render 'community' %></span>
+            </div>
           </div>
-        </div>
-        <h3 class="main-header">Individual</h3>
-        <p class="main-text">Your WALDO purchase will fund sight-saving products and treatments, which will directly help an individual to complete daily tasks and participate equally in their community, ensuring that no one is left behind.</p>
-      </div>
-
-      <div class="communities__box communities__box--2">
-
-        <div class="communities__tree">
-          <div class="communities__tree--lines">
-            <span class="communities__tree--line">&nbsp;</span>
-            <span class="communities__tree--line--lg">&nbsp;</span>
-            <span class="communities__tree--line--sm communities__tree--line--sm-1">&nbsp;</span>
-            <span class="communities__tree--line--sm communities__tree--line--sm-2">&nbsp;</span>
-          </div>
-          <span class="communities__circle">&nbsp;</span>
+          <h3 class="header--blue utility-margin-bt">Individual</h3>
+          <p class="text--blue utility-margin-bt">Your WALDO purchase will fund sight-saving products and treatments, which will directly help an individual to complete daily tasks and participate equally in their community, ensuring that no one is left behind.</p>
         </div>
 
-        <h3 class="main-header">Immediate community</h3>
-        <p class="main-text">By helping somebody in need, you'll also be helping the immediate community surrounding this individual to thrive, because in many casesvision is critical to daily life.</p>
-        <div class="communities__icon-box">
-          <div class="communities__icons">
-            <span class="communities__icon"><%= render 'community' %></span>
-            <span class="communities__icon"><%= render 'community' %></span>
-            <span class="communities__icon"><%= render 'community' %></span>
-            <span class="communities__icon"><%= render 'community' %></span>
-            <span class="communities__icon"><%= render 'community' %></span>
+        <div class="communities__box communities__box--2">
+
+          <div class="communities__tree utility-padding">
+            <div class="communities__tree--lines">
+              <span class="communities__tree--line">&nbsp;</span>
+              <span class="communities__tree--line--lg">&nbsp;</span>
+              <span class="communities__tree--line--sm communities__tree--line--sm-1">&nbsp;</span>
+              <span class="communities__tree--line--sm communities__tree--line--sm-2">&nbsp;</span>
+            </div>
+            <span class="communities__circle">&nbsp;</span>
+          </div>
+
+          <h3 class="header--blue utility-margin-bt">Immediate community</h3>
+          <p class="text--blue utility-margin-bt">By helping somebody in need, you'll also be helping the immediate community surrounding this individual to thrive, because in many casesvision is critical to daily life.</p>
+          <div class="communities__icon-box">
+            <div class="communities__icons">
+              <span class="communities__icon"><%= render 'community' %></span>
+              <span class="communities__icon"><%= render 'community' %></span>
+              <span class="communities__icon"><%= render 'community' %></span>
+              <span class="communities__icon"><%= render 'community' %></span>
+              <span class="communities__icon"><%= render 'community' %></span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="communities__box communities__box--3">
+        <div class="communities__box communities__box--3">
 
-        <div class="communities__tree">
-          <div class="communities__tree--lines">
-            <span class="communities__tree--line">&nbsp;</span>
-            <span class="communities__tree--line--lg">&nbsp;</span>
-            <span class="communities__tree--line--sm communities__tree--line--sm-1">&nbsp;</span>
-            <span class="communities__tree--line--sm communities__tree--line--sm-2">&nbsp;</span>
+          <div class="communities__tree utility-padding">
+            <div class="communities__tree--lines">
+              <span class="communities__tree--line">&nbsp;</span>
+              <span class="communities__tree--line--lg">&nbsp;</span>
+              <span class="communities__tree--line--sm communities__tree--line--sm-1">&nbsp;</span>
+              <span class="communities__tree--line--sm communities__tree--line--sm-2">&nbsp;</span>
+            </div>
+            <span class="communities__circle">&nbsp;</span>
           </div>
-          <span class="communities__circle">&nbsp;</span>
-        </div>
 
-        <h3 class="main-header">Wider community</h3>
-        <p class="main-text">By helping small groups of individuals, the localities that these individuals are a part of will become more supported and more efficient.</p>
-        <div class="communities__icon-box">
-          <div class="communities__icons">
-            <span class="communities__icon"><%= render 'community' %></span>
-            <span class="communities__icon"><%= render 'community' %></span>
-            <span class="communities__icon"><%= render 'community' %></span>
-            <span class="communities__icon"><%= render 'community' %></span>
-            <span class="communities__icon"><%= render 'community' %></span>
-            <span class="communities__icon"><%= render 'community' %></span>
-            <span class="communities__icon"><%= render 'community' %></span>
-            <span class="communities__icon"><%= render 'community' %></span>
-            <span class="communities__icon"><%= render 'community' %></span>
-            <span class="communities__icon"><%= render 'community' %></span>
+          <h3 class="header--blue utility-margin-bt">Wider community</h3>
+          <p class="text--blue utility-margin-bt">By helping small groups of individuals, the localities that these individuals are a part of will become more supported and more efficient.</p>
+          <div class="communities__icon-box">
+            <div class="communities__icons">
+              <span class="communities__icon"><%= render 'community' %></span>
+              <span class="communities__icon"><%= render 'community' %></span>
+              <span class="communities__icon"><%= render 'community' %></span>
+              <span class="communities__icon"><%= render 'community' %></span>
+              <span class="communities__icon"><%= render 'community' %></span>
+              <span class="communities__icon"><%= render 'community' %></span>
+              <span class="communities__icon"><%= render 'community' %></span>
+              <span class="communities__icon"><%= render 'community' %></span>
+              <span class="communities__icon"><%= render 'community' %></span>
+              <span class="communities__icon"><%= render 'community' %></span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
 </section>
 
 <section class="map__container">
-  <h1 class="header--underline">Across the globe</h1>
-  <p class="main-text">Our partnership with Sightsavers focuses on low and middle income countries in <strong>Africa</strong> and <strong>Asia.</strong></p>
-  <img src="<%= image_path('map.png') %>" alt="Map" class="map__container--image">
+  <h1 class="header--underline utility-margin-top">Across the globe</h1>
+  <p class="text--blue utility-margin-top">Our partnership with Sightsavers focuses on low and middle income countries in <strong>Africa</strong> and <strong>Asia.</strong></p>
+  <img src="<%= image_path('map.png') %>" alt="Map" class="map__container--image utility-margin-top utility-padding">
 </section>
 
 <section class="carousel">
 
-  <div class="header__item header__logo">
+  <div class="logo">
     <%= render 'waldo-logo-white' %>
-    <span class="header__x"> X </span>
+    <span class="logo__x"> X </span>
     <%= render 'sightsavers' %>
   </div>
 

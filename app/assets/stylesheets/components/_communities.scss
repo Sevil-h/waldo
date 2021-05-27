@@ -1,20 +1,19 @@
 .communities {
-  margin-right: 1.5rem;
-  margin-left: 1.5rem;
-
-  position: relative;
+  margin-bottom: -57rem;
   &__container {
     background-color: $color-grey-light-2;
-    padding: 2rem;
+    // padding: 2rem;
+    padding: 0.5rem;
 
-    position: absolute;
-    top: -52rem;
+    position: relative;
+    top: -50rem;
   }
 
   &__card {
     background-color: $color-grey-light;
-    padding: 2rem;
     margin: 1rem;
+    padding: 0.5rem;
+    // padding: 2rem;
 
     display: flex;
     flex-direction: column;
@@ -25,28 +24,24 @@
 
   &__box {
 
-
     &--1{
-      width: 45%;
+      width: 70%;
     }
 
     &--2{
-      width: 60%;
+      width: 75%;
     }
 
     &--3{
-      width: 80%;
+      width: 90%;
     }
-  }
-
-  &__icon-box {
-
   }
 
   &__icons{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   &__icon {
@@ -58,7 +53,6 @@
 
   &__tree {
     position: relative;
-    padding: 2rem;
 
     &--line {
       content: '';

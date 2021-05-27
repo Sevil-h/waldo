@@ -1,0 +1,15 @@
+.logo {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__x {
+    font-family: $headers-font;
+    color: $red;
+    font-size: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-weight: 500;
+  }
+}

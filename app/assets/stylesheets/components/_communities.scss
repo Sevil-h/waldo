@@ -25,11 +25,11 @@
   &__box {
 
     &--1{
-      width: 70%;
+      width: 80%;
     }
 
     &--2{
-      width: 75%;
+      width: 80%;
     }
 
     &--3{
@@ -46,9 +46,12 @@
 
   &__icon {
     display: inline-block;
-    &:not(:last-child) {
-      margin-right: 1rem;
-    }
+
+    margin-right: 1rem;
+
+    // &:not(:last-child) {
+    //   margin-right: 1rem;
+    // }
   }
 
   &__tree {

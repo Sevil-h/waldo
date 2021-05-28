@@ -1,6 +1,15 @@
 .header {
   display: grid;
   grid-template-rows: 1fr 1fr;
+
+    @include respond(tablet) {
+      grid-template-rows: 1.3fr 1fr;
+    }
+
+    @include respond(tab-land) {
+      grid-template-rows: 1.8fr 1fr;
+    }
+
   &__info {
     padding: 1.2rem;
     display: flex;
@@ -14,13 +23,21 @@
     display: flex;
     justify-content: center;
     &--main {
-      width: 90%;
+      width: 75%;
       object-fit: cover;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       box-shadow: 0 1rem 3rem rgba(0,0,0,.2);
       border-radius: 2px;
+
+      @include respond(phone-md) {
+        width: 90%;
+      }
+
+      @include respond(tablet) {
+        width: 100%;
+      }
     }
   }
 }

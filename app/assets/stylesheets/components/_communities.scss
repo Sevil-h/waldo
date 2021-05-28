@@ -2,24 +2,38 @@
   margin-bottom: -57rem;
   &__container {
     background-color: $color-grey-light-2;
-    // padding: 2rem;
     padding: 0.5rem;
 
     position: relative;
     top: -50rem;
+
+    @include respond(tab-port) {
+      padding: 1.5rem;
+    }
+
+    @include respond(tab-land) {
+      padding: 2.5rem;
+    }
   }
 
   &__card {
     background-color: $color-grey-light;
     margin: 1rem;
     padding: 0.5rem;
-    // padding: 2rem;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    @include respond(tab-port) {
+      padding: 1.5rem;
+    }
+
+    @include respond(tab-land) {
+      padding: 2.5rem;
+    }
   }
 
   &__box {

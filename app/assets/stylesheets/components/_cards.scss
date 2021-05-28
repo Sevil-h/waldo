@@ -1,9 +1,34 @@
 .cards {
   display: grid;
-  grid-template-columns: 1fr;
-  // grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 25rem;
   grid-gap: 1.5rem;
   justify-content: center;
+
+  transform: scale(.7);
+
+  @include respond(phone-md) {
+    transform: scale(.8);
+  }
+
+  @include respond(tab-port) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    transform: scale(.8);
+  }
+
+  @include respond(tab-land) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+    transform: scale(1);
+  }
+
+  @include respond(big-desktop) {
+    grid-gap: 2.5rem;
+
+    transform: scale(0.9);
+  }
 }
 
 .card {
@@ -16,11 +41,23 @@
   // padding: 2rem;
   padding: 1rem;
 
+  max-width: 25rem;
+  min-height: 30rem;
+
   display: none;
+
+  @include respond(tab-port) {
+    display: flex;
+  }
+
+  @include respond(big-desktop) {
+    max-width: 50rem;
+    min-height: 30rem;
+  }
 
 
   &--active {
-    display: block;
+    display: flex;
   }
 
   &__info-top {
@@ -34,7 +71,7 @@
     flex-direction: column;
     align-items: center;
 
-    padding: 2rem;
+    padding: 1rem 2rem;
   }
 
   &__icons {

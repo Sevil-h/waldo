@@ -8,6 +8,22 @@
 .container {
   // padding: 0 8rem;
   margin: 0 auto;
+
+  @include respond(tablet) {
+    padding: 0 2rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 0 4rem;
+  }
+
+  @include respond(tab-land) {
+    padding: 0 6rem;
+  }
+
+  @include respond(bi-deskop) {
+    padding: 0 8rem;
+  }
 }
 
 .map__container{

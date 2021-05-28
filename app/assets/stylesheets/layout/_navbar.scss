@@ -7,20 +7,52 @@
   position: relative;
   width: 100vw;
 
+  @include respond(tablet) {
+    padding: 0 2rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 0 4rem;
+  }
+
+  @include respond(tab-land) {
+    padding: 0 6rem;
+  }
+
+  @include respond(bi-deskop) {
+    padding: 0 8rem;
+  }
+
   &__deskop {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 2rem 8rem;
+    padding: 1rem;
 
     display: none;
+
+    @include respond(tab-port) {
+      display: flex;
+    }
   }
 
   &__logo {
     position: absolute;
-    top: 2rem;
-    left: 30%;
+    top: 1rem;
+    left: 25%;
     z-index: 100;
+
+    @include respond(phone-md) {
+      left: 30%;
+    }
+
+    @include respond(tablet) {
+      left: 40%;
+    }
+
+    @include respond(tab-land) {
+      left: 45%;
+    }
   }
 
 
@@ -106,6 +138,10 @@
   // display: flex;
   // flex-direction: row;
   padding: 1rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
 
 .burger-navigation {
@@ -114,6 +150,10 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+
+  @include respond(tab-port) {
+    display: none;
+  }
 
   // display:none;
   &__checkbox{

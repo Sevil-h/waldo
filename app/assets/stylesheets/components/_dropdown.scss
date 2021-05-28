@@ -1,5 +1,5 @@
 .dropdown {
-  margin: 3rem 0.2rem;
+  margin: 1rem 0.2rem;
   font-size: 1rem;
   font-weight: 200;
   font-family: $body-font;
@@ -9,16 +9,15 @@
   &--p{
     display: inline-block;
     font-family: $body-font;
+
   }
 
   &--text {
     display: none;
-    transition: all .5s;
   }
 
   &__angle {
   position: relative;
-  transition: all .5s;
 
   padding: 0.5rem;
   display: inline-block;
@@ -29,7 +28,6 @@
       right: 10px;
       cursor: pointer;
       opacity: 0;
-      transition: all .5s;
 
       &:hover {
         color: $yellow;
@@ -54,6 +52,8 @@
       display: inline-block;
       width: 100%;
       border-bottom: 1px solid $white;
+
+      transition: all .5s;
     }
 
   /////////////////////////////////
@@ -61,18 +61,23 @@
 
   &__checkbox {
     display: none;
-
   }
+
   &__checkbox:checked + &__button &--text{
     display: block;
+    animation: transitionDown 1s;
   }
 
   &__checkbox:checked + &__button &__angle &__angle--down {
     opacity: 0;
+    animation: transitionUp 1s;
   }
 
   &__checkbox:checked + &__button &__angle &__angle--up {
     opacity: 1;
+    animation: transitionDown 1s;
   }
 }
+
+
 
